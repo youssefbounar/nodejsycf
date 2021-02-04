@@ -8,6 +8,10 @@ const port = 3000;
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
+// pour recuperer l'argument de la ligne de commande
+// example node .\index.js ll
+var myArgs = process.argv.slice(2);
+console.log("myArgs: ", myArgs[0]);
 var arg_countrie = "ll";
 var arg_poeple = "au";
 var arg_animal = "a";
